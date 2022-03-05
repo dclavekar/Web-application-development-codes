@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <title>Question 5: Contact Us</title>
+        <style>
+            body{
+                font-family:'Comic Sans',  sans-serif;
+                background-color:  rgb(255, 224, 211);;
+            }
+
+            h2{
+                text-align: center;        
+                background-color: rgb(207, 58, 58);
+                padding-bottom: 10px;
+                padding-top: 10px;
+                color: white
+            }
+            
+            div.container{
+                position:relative;
+                background-color: khaki;
+                width: 420px;
+                height: 420px;
+                float:left;        
+                margin: 50px;   
+                padding-left: 20px;
+                padding-right: 25px; 
+                padding-bottom: 30px;
+                padding-top: 10px;           
+                border: 4px solid grey;
+                border-radius: 2px;    
+            }
+        
+            input[type=text], textarea{
+                width: 98%;
+                height: 34px;
+                margin-bottom: 20px;
+                margin-top: 8px;
+                font-size: 16px;
+            }
+
+            #send{
+                width: 100%;
+                margin-top: 1px;
+                padding: 8px;
+                padding-right: 5px;
+                padding-left: 5px;
+                font-size: 17px;
+                background: rgb(255, 196, 0);
+                border: 1px solid #030303;
+                border-radius: 2px;  
+            }
+        </style>
+    </head>
+    <body>
+        <p style="color:darkblue;">Name: Dhanashree Lavekar<br>Roll no: 33334<br>Batch:K11</p>
+        <div class="container">
+            <form class="form">
+                <h2>Contact Us!</h2>
+                <input type="text" name="Name" id="name" value="Name......" style="color: grey">
+                <input type="text" name="Email" id="email" value="Email......" style="color: grey">
+                <input type="text" name="Subject" id="subject" value="Subject......" style="color: grey">
+                <textarea name="address"style="color: grey; padding-bottom: 30px;">Message.........</textarea>
+                <button type="button" id="send" value="SEND MESSAGE">SEND MESSAGE</button>
+            </form>
+        </div>
+    </body>
+</html>

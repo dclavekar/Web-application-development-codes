@@ -1,0 +1,45 @@
+<html lang="en"> 
+
+<head>
+<meta charset=utf-8 />
+<title>Question 7</title>
+
+
+
+</head>
+
+<body>
+
+<form>
+Enter Shopping amount <input type="text" id="amt" /><br>
+<input type="button" onClick="discount()" Value="Calculate Discount" />
+</form>
+<p>Total Amount  <br>
+<span id = "result"></span>
+</p>
+
+
+</body>
+
+<script>
+function discount()
+	{
+		var num1;
+		num1 = Number(document.getElementById("amt").value);
+
+		if(num1>=1000 )
+		{
+            num1 = num1 - ((num1 * 15)/100)
+			document.getElementById("result").innerHTML = num1;
+		}
+		else if(num1<1000)
+		{
+			num1 = num1 - ((num1 * 5)/100)
+			document.getElementById("result").innerHTML = num1;
+		}
+	
+	}
+
+</script>
+
+</html>

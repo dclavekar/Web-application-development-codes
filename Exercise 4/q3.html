@@ -1,0 +1,57 @@
+<html lang="en"> 
+
+<head>
+<meta charset=utf-8 />
+<title>Question 3</title>
+
+
+
+</head>
+
+<body>
+
+<form>
+Number 1 <input type="text" id="firstNum" /><br>
+Number 2<input type="text" id="secondNum" /><br>
+<select name="options" id="options" onchange="calculate()">
+    <option value="sum">Sum</option>
+    <option value="sub">Sub</option>
+    <option value="mul">Mul</option>
+    <option value="div">Div</option>
+</select>
+
+</form>
+<h2>
+<span id = "result"></span>
+</h2>
+
+</body>
+
+<script>
+function calculate()
+{
+	let a=parseInt(document.getElementById("firstNum").value);
+	let b=parseInt(document.getElementById("secondNum").value);
+	let val=document.getElementById("options").value;
+	if(val=="sum")
+	{
+		document.getElementById("result").innerHTML=a+b;
+	}
+	else if(val=="sub")
+	{
+		document.getElementById("result").innerHTML=a-b;
+	}
+	else if(val=="mul")
+	{
+		document.getElementById("result").innerHTML=a*b;
+	}
+	else if(val=="div")
+	{
+		document.getElementById("result").innerHTML=a/b;
+	}
+	
+}
+
+</script>
+
+</html>

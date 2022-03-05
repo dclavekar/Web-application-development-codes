@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Question 1</title>
+  </head>
+  <body>
+    <script>
+
+      function add() {
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+
+        let result = num1 + num2;
+        document.getElementById("result").innerHTML = result;
+      }
+      function sub() {
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+        var res = Math.abs(num1 - num2);
+        document.getElementById("result").innerHTML = res;
+      }
+      function mul() {
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+
+        let result = num1 * num2;
+        document.getElementById("result").innerHTML = result;
+      }
+      function div() {
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+    
+        let result = num1 / num2;       
+        document.getElementById("result").innerHTML = result;
+      }
+      
+    </script>
+    <div class="inputs">
+      <label for="num1">number 1</label>
+      <input type="number" name="num1" id="num1" /><br />
+      <label for="num2">number 2</label>
+      <input type="number" name="num2" id="num2" /><br />
+
+      <br />
+    </div>
+    <div class="btn">
+      <input type="radio" onclick="add()">Sum
+      <input type="radio" onclick="sub()">Sub
+      <input type="radio" onclick="mul()">Mul
+      <input type="radio" onclick="div()">Div
+    </div>
+    <div class="resu">
+      <h2 id="result"></h2>
+    </div>
+  </body>
+</html>

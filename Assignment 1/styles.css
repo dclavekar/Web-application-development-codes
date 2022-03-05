@@ -1,0 +1,107 @@
+.container-fluid
+{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding:2px;
+}
+.heading
+{
+    text-align: center;
+    font-weight: bold;
+    color:darkblue;
+    background-color: lightgray;
+    padding: 5px;
+}
+.logo-image
+{
+    width: 100px;
+    height: auto;
+
+}
+.logo
+{
+    width:50px;
+    height: auto;
+}
+.nav-link
+{
+    color: darkblue;
+    padding:2px;
+    margin:2px;
+    font-weight: bold;
+}
+.form-inline
+{
+    margin: 2px;;
+}
+.banner-image
+{
+    width:100%;
+    height: 45%;
+}
+.row
+{
+    margin-top: 10px;
+}
+.statistics .card
+{
+    padding:10px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    margin:20px;
+    border: lightgrey 10px solid;
+    /* border-radius: 35px; */
+}
+.statistics .card-title
+{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0px;
+
+}
+.statistics .card-body
+{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    padding:10px;
+}
+
+.redirect
+{
+    text-align: center;
+    margin:10px;
+}
+.redirect-short
+{
+    margin-bottom: 5px;;
+    text-align: center;
+}
+.sidebar
+{
+    margin-left: 20px;;
+    max-width: 100%;
+    object-fit: contain;
+}
+.item-image
+{
+   
+    width: 300px;;
+}
+.card{
+    text-align: center;
+}
+.card-title
+{
+    font-size: 1rem;
+    font-weight: bold;
+    padding:0.1 rem;
+
+}
+@media screen and (max-width: 600px) {
+    .redirect-row
+    {
+        text-align: center;
+    }
+  }

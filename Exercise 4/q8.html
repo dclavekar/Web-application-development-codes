@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Question 8</title>
+        <style>
+            p{
+                border:1px solid black;
+                width: 150px;
+                padding-left: 2px;
+            }
+        </style>
+    </head>
+
+    <script>
+        function find_capital()
+        {
+            let cntr = document.getElementById("country").value;
+            
+            
+            if(cntr=="India")
+            document.getElementById("capital").innerHTML  = "New Delhi";
+            if(cntr == "UK")
+            document.getElementById("capital").innerHTML = "London";
+            if(cntr=="Australia")
+            document.getElementById("capital").innerHTML= "Canberra";
+            if(cntr=="NewZealand")
+            document.getElementById("capital").innerHTML="Wellinton";
+            if(cntr=="Japan")
+            document.getElementById("capital").innerHTML="Tokyo";
+            
+            
+        }
+    </script>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2" align="center">Select Country to find its Capital</th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="country" onChange="find_capital()">
+                        <option >India</option>
+                        <option >UK</option>
+                        <option >Australia</option>
+                        <option >NewZealand</option>
+                        <option >Japan</option>
+                    </select>
+                </td>
+                <td>
+                    <p  id="capital" >New Delhi</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Question 9</title>
+        <style>
+            p{
+                margin-top: 20px;
+                font-size: large;
+            }
+        </style>
+    </head>
+
+    <script>
+        function num_day()
+        {
+            let n = +num.value %7;
+            let d;
+            switch(n)
+            {
+                case 1:
+                    d="Monday";
+                    break;
+                case 2:
+                    d="Tuesday"
+                    break;
+                case 3:
+                    d="Wednsday";
+                    break;
+                case 4:
+                    d="Thursday";
+                    break;
+                case 5:
+                    d="Friday";
+                    break;
+                case 6:
+                    d="Saturday";
+                    break;
+                case 7:
+                    d="Sunday";
+                    break;
+                default:
+                    d="Undefined";
+                    break;
+            }
+            document.getElementById("day").innerHTML="Day is " +d;
+            
+        }
+    </script>
+    <body>
+        <table>
+            <tr>
+                <td>Enter number</td>
+                <td><input type="text" id="num"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="num_day()">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="day"></p>
+                </td>
+                
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+
+<html lang="en"> 
+
+    <head>
+    <meta charset=utf-8 />
+    <title>Question 5</title>
+    
+    
+    </head>
+    
+    <body>
+    
+    <form>
+    Number 1<input type="text" id="firstNum" /><br>
+    Number 2 <input type="text" id="secondNum" /><br>
+    Number 3 <input type="text" id="thirdNum" /><br>
+    <input type="button" onClick="greatest()" Value="Greatest" />
+    </form>
+    
+    
+    </body>
+    
+    <script>
+    function greatest()
+        {
+            var num1, num2, num3;
+            num1 = Number(document.getElementById("firstNum").value);
+            num2 = Number(document.getElementById("secondNum").value);
+            num3 = Number(document.getElementById("thirdNum").value);
+    
+            if(num1>num2 && num1>num3)
+            {
+                window.alert(num1+" is greatest");
+            }
+            else if(num2>num1 && num2>num3)
+            {
+                window.alert(num2+" is greatst");
+            }
+            else if(num3>num1 && num3>num1)
+            {
+                window.alert(num3+" is greatest");
+            }
+        }
+    
+    </script>
+    
+    </html>

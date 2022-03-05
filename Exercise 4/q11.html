@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <title>Question 11</title>
+
+</head>
+<script>
+    function validate() {
+        let u = document.getElementById("username").value;
+        let p = document.getElementById("password").value;
+        if (!(u=="admin" || u=="Admin" || u=="ADMIN"))
+        {
+            document.getElementById("result").innerHTML="Invalid username";
+        }
+        else if (p!= "admin123")
+        {
+            document.getElementById("result").innerHTML="Invalid password";
+        }
+        else{
+            document.getElementById("result").innerHTML="Login successful";
+        }
+
+        
+    }
+   
+</script>
+
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username"><br>
+
+    <label for="password">Password</label>
+    <input type="text" id="password"><br>
+
+    <button onclick="validate()" type="submit">Login</button>
+
+    <div id="result_display">
+        <p id=result>  </p>
+    </div>
+    Note:username=admin/Admin/ADMIN. Password: admin123
+
+</body>
+
+</html>

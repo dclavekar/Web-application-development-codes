@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Question 10
+        </title>
+        <style>
+            div{
+                margin-left: 20px;
+            }
+        </style>
+        </head>
+        <script>
+            function gen_table()
+            {
+                let n = +num.value;
+                let i;
+                table="";
+                for(i=1;i<=10;i++)
+                {
+                    var val = n*i;
+                    table+= "<p>" + n +" x " + i +" = " + val +"</p>";
+                }
+                document.getElementById("table").innerHTML=table;
+            }
+        </script>
+        <body>
+            <table>
+                <tr>
+                    <td>Enter number</td>
+                    <td><input type="text" id="num"></td>
+                    <td>
+                        <button onclick="gen_table()">Go</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="table"></div>
+        </body>
+</html>
